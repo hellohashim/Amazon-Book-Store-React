@@ -1,13 +1,29 @@
 import {Router, Route, Routes, Link } from 'react-router-dom';
 import styles from './Nav1.module.css'
 import amazonLogo from '../../assets/amazon-logo.jpg';
+import amazonLogo2 from '../../assets/amazon-logo-2.png';
 import SearchBar from './SearchBar.js'
 import Cart  from './Cart.js'; 
+import { useMediaQuery } from "react-responsive";
+
 function Nav1()
+{
+    const isMobile = useMediaQuery({ maxWidth: 1270 });
+    const isDesktop = useMediaQuery({ minWidth: 1271 });
+
+    return (
+    <>
+      {isDesktop && <Nav_desktop />}
+      {isMobile && <MobileNav1 />}
+    </>
+  );
+}
+
+function Nav_desktop()
 {
     {/* --------------------------------Top-NAVBAR---------------------------------*/}
     return (
-    <nav className={styles["navigation-1"]}>
+    <nav className={`${styles["navigation-desktop"]} ${styles["navigation-1"]}`}>
         <ul className= {styles["navigation-1-items"]}>
             <li className={`${styles["amazon-logo-container"]} ${styles["nav-item"]}`}>
                 <a href="https://www.amazon.com/ref=nav_logo">
@@ -77,5 +93,35 @@ function Nav1()
         </ul>
     </nav>);
 }
+
+
+function MobileNav1() {
+    return (
+        <nav className={`${styles["navigation-mobile"]} ${styles["navigation-1"]}`}>
+            <div className= {`container-fluid ${styles["navigation-mobile-items"]}`}>
+                
+                {/* First row: logo + cart */}
+                <div className={`row d-flex justify-content-between align-items-center ${styles["custom-padding"]}`}>
+                    <div className={`col-auto ${styles["mobile-logo-container"]}`}>
+                        <a href="https://www.amazon.com/ref=nav_logo">
+                            <img src={amazonLogo2} alt="Amazon logo" />
+                        </a>
+                    </div>
+                    <div className={`col-auto ${styles["cart"]}`}>
+                        <Cart />
+                    </div>
+                </div>
+
+                {/* Second row: search bar */}
+                <div className={`row ${styles["custom-padding"]}`}>
+                    <div className={`col ${styles["mob-searchbar"]}`}>
+                        <SearchBar />
+                    </div>
+                </div>
+            </div>
+        </nav>
+    );
+}
+
 
 export default Nav1;

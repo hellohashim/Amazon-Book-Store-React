@@ -15,8 +15,9 @@
   height: 45px;
   padding: 0;
   background-color: white;
-  max-width: 620px !important;
+  max-width: 660px !important;
   width: 100%;
+  flex-wrap: nowrap;
 }
 
 .dropdown-menu {
@@ -76,4 +77,30 @@
 
 .nav-search-bar:has(.nav-search-bar-text:focus) {
   border-color: #f8986b;
+}
+
+@media (max-width: 1271px) {
+  .nav-search-bar {
+    max-width: 1260px !important; 
+    width: 100%;
+    margin: 0 auto;
+    height: 3rem;
+    margin-top: 0.5rem;
+  }
+  
+  .search-bar-group .dropdown-toggle
+  {
+    display: none;
+  }
+
+  .search-bar-group .nav-search-bar-text
+  {
+      flex: 1 1 auto !important;
+      width: auto !important;
+      min-width: 0 !important;
+      font-size: 1.2rem;
+      font-weight: 500;
+  }
+
+
 }

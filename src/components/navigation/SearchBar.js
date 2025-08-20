@@ -3,19 +3,19 @@ import style from "./SearchBar.module.css";
 
 function SearchBar() {
   return (
-    <div className={`flex-grow-1 d-flex justify-content-center ms-3 ${style["nav-search-bar-container"]}`}>
+    <div className={`flex-grow-1 d-flex justify-content-center ${style["nav-search-bar-container"]}`}>
       <form action="" className={style["nav-search-bar"]}>
-        <div className="input-group">
+        <div className={`input-group ${style["search-bar-group"]}`}>
 
           {/* Dropdown button */}
           
           <button
-            className={`btn dropdown-toggle hide-on-mobile ${style["dropdown-toggle"]}`}
+            className={`btn dropdown-toggle ${style["dropdown-toggle"]}`}
             type="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            All
+            Books
           </button>
           <ul className="dropdown-menu">
             <li><a className="dropdown-item" href="#">option1</a></li>

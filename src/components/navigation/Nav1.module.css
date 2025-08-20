@@ -1,17 +1,23 @@
 .navigation-1
 {
-    background-color: #0F1111;
     width: 100%;
     min-width: 300px;
+}
+
+.navigation-desktop
+{
+    background-color: #0F1111;
 }
 .navigation-1-items 
 {
     list-style: none;
-    padding: 0.48rem 1rem;
+    padding: 0.48rem 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1.6rem;
+    margin: 0;
+
     
 }
 
@@ -113,21 +119,17 @@
 }
 
 
-
-@media (max-width: 1272px) 
+.navigation-mobile
 {
-    .hide-on-mobile
-    {
-        display: none;
-    }
+    background-color: #232f3e;
+}
 
-    .navigation-1
-    {
-        background-color: #232f3e;;
-    }
-    .navigation-1-items 
-    {
-        justify-content: space-between;
-    }
+.mobile-logo-container img
+{
+    width: 6.56rem;
+}
 
+.navigation-mobile-items
+{
+    padding: 0.48rem 0.5rem;
 }
