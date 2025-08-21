@@ -122,14 +122,45 @@
 .navigation-mobile
 {
     background-color: #232f3e;
+    overflow: hidden;
 }
 
+.navigation-mobile-items
+{
+    padding: 0.7rem 0.7rem;
+}
+
+.nav-2-sideDrawer {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 30'%3E%3Cpath stroke='white' stroke-width='2' d='M2 6h36M2 15h36M2 24h36'/%3E%3C/svg%3E");
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  margin-right: 0.2rem;
+}
+
+.mobile-logo-container a
+{
+    margin-top: 0.3rem;
+}
 .mobile-logo-container img
 {
     width: 6.56rem;
 }
 
-.navigation-mobile-items
+.right-side-options span
 {
-    padding: 0.48rem 0.5rem;
+    color: #FFFFFF;
+}
+
+.signin-text
+{
+    font-size: 1.1rem;
+}
+
+@media (min-width: 1450px) 
+{
+    .navigation-1-items 
+    {
+        gap: 3rem;
+    }
+
 }

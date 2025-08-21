@@ -84,8 +84,10 @@
     max-width: 1260px !important; 
     width: 100%;
     margin: 0 auto;
-    height: 3rem;
-    margin-top: 0.5rem;
+    height: 3.7rem;
+    border-radius: 0.8rem;
+    margin-top: 0.75rem;
+    border: 0;
   }
   
   .search-bar-group .dropdown-toggle
@@ -98,9 +100,25 @@
       flex: 1 1 auto !important;
       width: auto !important;
       min-width: 0 !important;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       font-weight: 500;
   }
 
+  .nav-search-bar-text::placeholder 
+  {
+    font-size: 1.5rem;
+  }
 
+  .nav-search-bar-button i 
+  {
+    color: black;
+    font-size: 1.8rem;
+  }
+
+  .nav-search-bar-button
+  {
+     border-top-left-radius: 0.6rem !important;
+     border-bottom-left-radius: 0.6rem !important;
+     width: 4.3rem;
+  }
 }

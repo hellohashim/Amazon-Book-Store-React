@@ -5,6 +5,7 @@ import amazonLogo2 from '../../assets/amazon-logo-2.png';
 import SearchBar from './SearchBar.js'
 import Cart  from './Cart.js'; 
 import { useMediaQuery } from "react-responsive";
+import Signin from './Signin-btn.js';
 
 function Nav1()
 {
@@ -102,13 +103,24 @@ function MobileNav1() {
                 
                 {/* First row: logo + cart */}
                 <div className={`row d-flex justify-content-between align-items-center ${styles["custom-padding"]}`}>
-                    <div className={`col-auto ${styles["mobile-logo-container"]}`}>
+                    <div className={`col-auto d-flex align-items-center gap-2 ${styles["mobile-logo-container"]}`}>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#sideDrawer" aria-controls="sideDrawer" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class= {`navbar-toggler-icon ${styles["nav-2-sideDrawer"]}`}></span>
+                        </button>
                         <a href="https://www.amazon.com/ref=nav_logo">
                             <img src={amazonLogo2} alt="Amazon logo" />
                         </a>
                     </div>
-                    <div className={`col-auto ${styles["cart"]}`}>
-                        <Cart />
+
+                    <div className={`col-auto d-flex gap-3 ${styles["right-side-options"]}`}>
+                        <div className='d-flex align-items-center'>
+                            <span className={`${styles["signin-text"]}`}>Sign in ❯</span>
+                            <Signin/>
+                        </div>
+                        <div className={`${styles["cart"]}`}>
+                            <Cart />
+                        </div>
                     </div>
                 </div>
 
