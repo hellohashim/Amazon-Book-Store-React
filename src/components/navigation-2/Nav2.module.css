@@ -1,0 +1,74 @@
+/* ---------------------------------Main(& sub) Navbar---------------------------- */
+/* the main and sub navbar display flex so button and the ul items come along */
+.nav-2
+{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #232f3e;
+}
+
+
+/* the sideDrawer button icon color changed to white*/
+.nav-2-sideDrawer
+{
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 30'%3E%3Cpath stroke='white' stroke-width='3.5' d='M2 6h36M2 15h36M2 24h36'/%3E%3C/svg%3E");
+   font-size: 0.8rem;
+    margin-left: 1.1rem;
+    margin-right: 0.3rem;
+}
+
+/* Text after the icon i.e All text */
+.nav-2-sideDrawer-text
+{
+    color: white;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+/* the ul styled to ne (no bullets), display flex(all li items in one row)
+    Center the li items vertically inside navbar and setting margin to 0 
+    padding set to 1.1 to lower the default padding*/
+.nav-2 > .nav-2-ul
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 1.1rem;
+    font-size: 0.97rem;   
+    gap: 1.2rem;
+}
+
+
+/* no underlining of a tag elements when hovered and no more blue color of the links
+   flex set to 1 means it will grown and shrink by 1*/
+.nav-2-ul a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    flex: 1;
+}
+
+
+
+.nav-2-mobile-container
+{
+    background-color: #37475A;
+    color: #FFFFFF;
+    padding: 0.85rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-top: #c9c9c9 1px solid; 
+}
+
+.nav-2-mobile-country-name
+{
+    margin-left: 0.2rem;
+}
+
+.chevron-down-icon-container img
+{
+    width: 1.1rem;
+}

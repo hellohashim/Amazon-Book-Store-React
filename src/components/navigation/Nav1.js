@@ -1,4 +1,3 @@
-import {Router, Route, Routes, Link } from 'react-router-dom';
 import styles from './Nav1.module.css'
 import amazonLogo from '../../assets/amazon-logo.jpg';
 import amazonLogo2 from '../../assets/amazon-logo-2.png';
