@@ -17,8 +17,7 @@
     justify-content: center;
     gap: 1.6rem;
     margin: 0;
-
-    
+  
 }
 
 .amazon-logo-container img
@@ -152,6 +151,10 @@
     color: #FFFFFF;
 }
 
+.signin-container a
+{
+    text-decoration: none;
+}
 .signin-text
 {
     font-size: 1.1rem;

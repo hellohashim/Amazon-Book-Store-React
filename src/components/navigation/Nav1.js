@@ -32,7 +32,7 @@ function Nav_desktop()
             </li>
 
 
-            <li className= {`${styles["deliver-to-country"]} ${styles["nav-item"]} ${styles["hide-on-mobile"]}`}>
+            <li className= {`${styles["deliver-to-country"]} ${styles["nav-item"]}`}>
                 <a href="#">
                     {/*<!-- Icon Column -->*/}
                     <div id="geo-icon-div">
@@ -45,14 +45,14 @@ function Nav_desktop()
                 </a>
             </li>
 
-            <li className={styles['hide-on-mobile']}>
+            <li>
                 <SearchBar/>
             </li>
 
 
             {/*<!-- now select language drop down button FLAG + Language -->*/}
                 
-            <li className={`${styles["nav-item"]} dropdown ${styles["hide-on-mobile"]}`}>
+            <li className={`${styles["nav-item"]} dropdown`}>
                 <a className={`nav-link dropdown-toggle ${styles["nav-language-dropdown-option"]}`}  href="https://www.amazon.com/customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang_ais" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <span className={`fi fi-pk ${styles["nav-flag-icon"]}`}></span><span className={`${styles["nav-language-name"]} ${styles["navigation-1-lower-text"]}`}>UR</span>
                 </a>
@@ -65,7 +65,7 @@ function Nav_desktop()
             </li>
             
             {/*<!-- Navbar - sign and account lists -->*/}
-            <li className={`${styles["nav-item"]} dropdown ${styles["hide-on-mobile"]}`}>
+            <li className={`${styles["nav-item"]} dropdown`}>
                 <a className={`"nav-link dropdown-toggle ${styles["nav-login-dropdown-option"]}`} href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fs%3Fk%3Dnew%2Bbest%2Bseller%2Bbooks%2B2025%26language%3Den_US%26adgrpid%3D171853897646%26hvadid%3D728348585942%26hvdev%3Dc%26hvlocphy%3D1011086%26hvnetw%3Dg%26hvqmt%3Db%26hvrand%3D7456336649005945175%26hvtargid%3Dkwd-2403521395895%26hydadcr%3D19879_13561585%26mcid%3Df5c5618ac1e031cca4a948576fbb18b6%26tag%3Dhydglogoo-20%26ref%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <div className={`d-flex flex-column nav-hello-signin-plus-acc-lists-text ${styles["nav-item-text"]}`}>
                         <span>Hello, sign in</span>
@@ -75,7 +75,7 @@ function Nav_desktop()
             </li>
 
             {/*<!-- Navbar - Returns and Orders -->*/}
-            <li className={`${styles["nav-item"]} ${styles["hide-on-mobile"]}`}>
+            <li className={`${styles["nav-item"]}`}>
                 <div className={`d-flex flex-column ${styles["nav-Returns-Orders-text"]} ${styles["nav-item-text"]}`}>
                     <span>Returns </span>
                     <span className={`nav-Orders-text ${styles["navigation-1-lower-text"]}`}> & Orders</span>
@@ -87,7 +87,7 @@ function Nav_desktop()
                 <div className={styles["nav-1-cart-item-div"]}>
                     <Cart/>
                     {/*<!-- Cart Text -->*/}
-                    <span className={`${styles["nav-cart-text"]} ${styles["navigation-1-lower-text"]} ${styles["hide-on-mobile"]}`}>Cart</span>
+                    <span className={`${styles["nav-cart-text"]} ${styles["navigation-1-lower-text"]}`}>Cart</span>
                 </div>
             </li>
         </ul>
@@ -113,9 +113,11 @@ function MobileNav1() {
                     </div>
 
                     <div className={`col-auto d-flex gap-3 ${styles["right-side-options"]}`}>
-                        <div className='d-flex align-items-center'>
-                            <span className={`${styles["signin-text"]}`}>Sign in ❯</span>
-                            <Signin/>
+                        <div className={`${styles["signin-container"]}`}>
+                            <a className="d-flex align-items-center" href='https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Famz-books%2Fstore%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0'>
+                                <span className={`${styles["signin-text"]}`}>Sign in ❯</span>
+                                <Signin/>
+                            </a>
                         </div>
                         <div className={`${styles["cart"]}`}>
                             <Cart />

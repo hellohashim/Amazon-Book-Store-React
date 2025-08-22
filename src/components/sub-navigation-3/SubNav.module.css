@@ -1,0 +1,93 @@
+/* -------------------------------- Sub Navbar---------------------------- */
+
+/* box shadow to draw shadow at the bottom of the navbar */
+.nav-3
+{
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.13); /* subtle bottom shadow */
+}
+
+.nav-3 > .nav-3-ul
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 1.1rem; 
+    gap: 1.5rem;
+    font-size: 0.95rem;
+}
+
+
+/* sub navbar's book svg */
+.books-svg
+{
+    padding-right: 1.2rem;
+    border-right: 1px solid #b0b0b0;
+}
+
+/* dropdown-toggle icon after li items in ul of sub navbar*/
+.nav-3-dropdown-option::after
+{
+    position: relative;
+    top: 0.2rem;
+    font-size: 1.1rem;
+}
+
+/* last item of sub navbar */
+.nav-3-your-books-link
+{
+    border-left: 1px solid #b0b0b0;
+    padding-left: 1.2rem;
+}
+
+/* link of last item of sub navbar */
+.nav-3-your-books-link a
+{
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-3-ul-items div
+{
+    flex: 1;
+}
+
+
+
+.nav-3-mob
+{
+    height: 4rem;
+}
+.books-svg-mobile
+{
+    padding-left: 1.1rem;
+    border: 0;
+}
+
+.books-svg-mobile-link img
+{
+    width: 5.5rem;
+}
+
+.nav-3-mob-right-side-elements
+{
+    font-size: 1.25rem;
+}
+.nav-3-mob-your-books
+{
+    text-decoration: none;
+    color: #000000;
+    border-right: 1px solid #b0b0b0;
+    margin-top: 0.15rem;
+    margin-right: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.chevron-down-icon-container img
+{
+    width: 0.8rem;
+    margin-left: 0.4rem;
+}
