@@ -1,0 +1,35 @@
+.main-submit-feedback-section
+{
+    margin-top: 1.5rem;
+}
+.main-submit-feedback-container
+{
+    border: 0.02rem solid #dbd6d6;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+}
+
+.main-submit-feedback-container p
+{
+    margin: 0;
+}
+
+@media (max-width: 1271px)
+{
+    .main-submit-feedback-container
+    {
+        margin-right: 1.5rem;
+    }
+}
+
+@media (max-width: 576px)
+{
+ .main-submit-feedback-container
+    {
+        justify-content: left;
+    }
+}

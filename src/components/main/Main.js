@@ -10,6 +10,8 @@ import BrowsingHistory from './Browsing-history';
 import ThisWeekDeals from './This-week-deals';
 import PopularAuthors from './Popular-authors';
 import ExploreTopCategories from './Explore-top-categories';
+import SubmitFeedback from './Submit-feedback';
+
 function Main() 
 {
     return(
@@ -69,6 +71,11 @@ function Main()
             <hr />
             {/*-- Explore Top Categories --*/}
             <ExploreTopCategories />
+
+            <hr />
+            {/*-- Submit feedback section --*/}
+            <SubmitFeedback />
+            <br/>
         </main>
     );
 }

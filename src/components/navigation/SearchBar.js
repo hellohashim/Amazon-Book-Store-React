@@ -1,5 +1,5 @@
-import React from "react";
 import style from "./SearchBar.module.css";
+import search_icon from '../../assets/search-icon.png';
 
 function SearchBar() {
   return (
@@ -33,7 +33,11 @@ function SearchBar() {
 
           {/* Search icon button */}
           <button className={`btn border-0 ${style["nav-search-bar-button"]}`} type="button">
-            <i className="bi bi-search"></i>
+            <img
+              src={search_icon}
+              alt="search icon"
+              className={style["nav-search-bar-icon"]}
+            />
           </button>
 
         </div>
