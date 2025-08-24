@@ -1,0 +1,116 @@
+/* -------------------------------------------MAIN WEBPAGE---------------------------------------------- */
+.main-webpage-body
+{
+    margin: 0;
+    margin-left: 1rem;
+}
+
+/* h1 tag of the webpage Shop books */
+.main-h1-shop-books
+{
+    margin-top: 0.7rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/* an image link for limited time deals */
+.limited-time-deals-img-link img
+{
+    max-width: 2400px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.limited-time-deals-img-link
+{
+    display: block;
+    max-width: 100%;
+    margin-right: 1rem;
+}
+
+/*-------------------------- Suggestions -----------------------------------*/
+/* Suggestion links below the limited time deals 
+   leaving space between top deal and suggestions*/
+.main-suggestion-links-div
+{
+    margin-top: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+/* the list of suggestions: no bullets in ul, no default padding,
+   display flex so that items set ahead of each other, center them horizontally & vertically,
+   and set gap between each li item*/
+.main-suggestion-links-ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.108rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9rem;
+    flex-wrap: nowrap; 
+}
+
+/* li items of ul: border set, display flex so that image and text in each li set ahead of one another, 
+   suitable gap set between image and text inside li, max width of each li item set to 20rem and width to 100% 
+   and again aligning items in the center vertically inside the li*/
+.main-suggestion-links 
+{
+    flex: 0 0 auto; /* <- important to prevent shrinking */
+    border: 0.06rem solid #c9cbcb;
+    border-radius: 0.5rem;
+    display: flex;
+    gap: 0.72rem;
+    max-width: 19.3rem;
+    width: 100%;
+    align-items: center;
+}
+
+/* when hovered upon each li item border will turn black */
+.main-suggestion-links:hover
+{
+    border: 0.06rem solid #000000;
+}
+
+/* setting size of the image according to the size of the li required,
+   rounding the border on top left and bottom left so they align with the rounded borders of li */
+.main-suggestion-links img
+{
+    width: 3.5rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+/* no more underlining of the link when hovered upon */
+.main-suggestion-links a
+{
+    text-decoration: none;
+    color: black;
+    line-height: 1.25rem;
+
+}
+
+@media (max-width: 1271px) 
+{
+    .main-suggestion-links-div 
+    {
+        overflow-x: auto; 
+        scroll-snap-type: x mandatory; 
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+    }
+
+    .main-suggestion-links-ul 
+    {
+        justify-content: flex-start; /* center will cause empty space; left-align for scroll */
+    }
+
+    /* optional: hide scrollbar on Webkit browsers */
+    .main-suggestion-links-div::-webkit-scrollbar 
+    {
+        display: none;
+    }
+}
