@@ -32,7 +32,7 @@ function ThisWeekDeals()
             <div className='d-flex justify-content-between'>
                 <h2 className={styles["main-book-section-title"]}>This week's deal - Great on Kindle reads</h2>
                 <div className={`${styles['main-book-see-more-div']} ${styles["only-on-desktop"]}`}>
-                    <a href="https://www.amazon.com/amz-books/seeMore/?_encoding=UTF8&pd_rd_w=042Xi&content-id=amzn1.sym.2afe309b-727a-402f-abac-8a28cfa877dd&pf_rd_p=2afe309b-727a-402f-abac-8a28cfa877dd&pf_rd_r=WZJ3BZ39PFWY48CRK4XF&pd_rd_wg=0Vsgs&pd_rd_r=c13383f5-914f-4e0f-b533-17b949d294e0&ref_=cp&widgetId=desktop-books-storefront_ClickPicksStrategy&title=Inspired%20by%20your%20browsing%20history%20&ref_=books_amz-books_desktop_mfs_cp&sourceType=RECS&page=1&pd_rd_w=042Xi&content-id=amzn1.sym.2afe309b-727a-402f-abac-8a28cfa877dd&pf_rd_p=2afe309b-727a-402f-abac-8a28cfa877dd&pf_rd_r=WZJ3BZ39PFWY48CRK4XF&pd_rd_wg=0Vsgs&pd_rd_r=c13383f5-914f-4e0f-b533-17b949d294e0&metadata=%24deviceID%3A%24deviceFormFactor%3Alarge%24deviceAppType%3ADESKTOP%24deviceTypeID%3A%24deviceFamily%3A%24deviceSurfaceType%3Adesktop%24cardAppType%3ADESKTOP%24cardSurfaceType%3Adesktop%24cardMobileOS%3AUnknown%24sidekickLocale%3Aen-US%24locale%3Aen-US%24clientRequestId%3AWZJ3BZ39PFWY48CRK4XF%24multiFormatWidgetSpClickUrlType%3Adefault&cardFeedType=widgetId">
+                    <a href="https://www.amazon.com/s?k=this+week+deals&i=stripbooks&crid=39695FGWZMGIK&sprefix=this+week+dea%2Cbooks%2C295&ref=nb_sb_noss">
                         See more
                         <span>
                           <img src={chevron} alt='>'/>

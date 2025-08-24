@@ -8,6 +8,8 @@ import BestSellersOnKindle from './Best-sellers-on-kindle';
 import BestSellersInPrint from './Best-sellers-in-print';
 import BrowsingHistory from './Browsing-history';
 import ThisWeekDeals from './This-week-deals';
+import PopularAuthors from './Popular-authors';
+import ExploreTopCategories from './Explore-top-categories';
 function Main() 
 {
     return(
@@ -59,6 +61,14 @@ function Main()
             {/*-- This week deals section --*/}
             <ThisWeekDeals />
             
+            <hr />
+
+            {/*-- Popular authors & series section --*/}
+            <PopularAuthors />
+
+            <hr />
+            {/*-- Explore Top Categories --*/}
+            <ExploreTopCategories />
         </main>
     );
 }

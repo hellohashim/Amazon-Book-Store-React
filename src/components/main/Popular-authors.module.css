@@ -1,0 +1,21 @@
+.main-book-section-title
+{
+    margin-top: 0.8rem;
+    font-size: 1.72rem;
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+.popular-authors-section
+{
+    width: auto;
+}
+
+
+.popular-authors img
+{
+    width: auto;
+}
+
+.popular-authors :global(.col-lg-2) {
+  text-align: center;
+}
