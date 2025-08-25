@@ -10,7 +10,7 @@ function FooterNav2()
             <div className={`${styles["footer-nav-2-logo-container"]} ${styles["hide-on-mobile"]}`}>
                 <img src={amazonLogo2} alt="Amazon logo" />
             </div>
-            <ul className={`d-flex gap-3 ${styles["footer-nav-2-ul"]}`}>
+            <ul className={`d-flex gap-2 ${styles["footer-nav-2-ul"]}`}>
                 <li className={`${styles["footer-nav-2-li"]}`}>
                     <a className={`d-flex align-items-center justify-content-between ${styles["footer-nav-2-li1-a"]}`} href="https://www.amazon.com/customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang">
                         <div className={`d-flex align-items-center ${styles["footer-nav-2-li1-2items"]}`}>
